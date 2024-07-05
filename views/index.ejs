@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cars App</title>
+  </head>
+  <body>
+    <h1>Welcome to the Cars app!</h1>
+    <p>An app for collecting your favorite cars.</p>
+    <a href = '/cars'>Browse all cars</a>
+    <a href = '/cars/new'>Add a new car</a>
+
+    <h2>Search for a Car</h2>
+    <form action="/cars/search" method="GET">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" />
+        
+        <label for="isReadyToDrive">Ready to Drive?</label>
+        <select name="isReadyToDrive" id="isReadyToDrive">
+            <option value="">Any</option>
+            <option value="true">Yes</option>
+            <option value="false">No</option>
+        </select>
+        
+        <label for="drivetrain">Drivetrain:</label>
+        <input type="text" name="drivetrain" id="drivetrain" />
+        
+        <button type="submit">Search</button>
+  </body>
+</html>

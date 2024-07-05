@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add a Car</title>
+  </head>
+<body>
+    <h1>Add a new car!</h1>
+    <form action="/cars" method="POST">
+      <label hid for="name">Name:</label>
+      <input type="text" name="name" id="name" />
+  
+      <label for="isReadyToDrive">Ready to Drive?</label>
+      <input type="checkbox" name="isReadyToDrive" id="isReadyToDrive" />
+
+      <label hid for="drivetrain">Drivetrain:</label>
+      <input type="text" name="drivetrain" id="drivtrain" />
+  
+      <button type="submit">Add Car</button>
+    </form>
+    <a href="/"> Back to Home</a>
+  </body>
+  
+</html>

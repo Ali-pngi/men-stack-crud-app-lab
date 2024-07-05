@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Cars</title>
+</head>
+<body>
+    <h1>All Cars</h1>
+    <ul>
+        <% cars.forEach(car => { %>
+            <li><%= car.name %> - <%= car.isReadyToDrive ? 'Ready to Drive' : 'Not Ready to Drive' %> - <%= car.drivetrain %>
+                <form action="/cars/<%= car._id %>?_method=DELETE" method="POST" style="display:inline;">
+                    <button type="submit">Delete</button>
+                </form>
+            </li>
+        <% }); %>
+    </ul>
+    <a href="/">Back to Home</a>
+    <a href="/cars/new">Add a new car</a>
+</body>
+</html>
